@@ -1,0 +1,44 @@
+server:
+  port: 8082
+
+spring:
+  mail:  
+    host: smtp.gmail.com
+    username: kevensantos993@gmail.com
+    password: eyncouuxssimgwrc
+    port: 587
+    smtp:
+        starttls:
+          required: true
+          enable: true
+          auth: true
+          
+    properties:
+      mail:
+        smtp:
+          starttls:
+            required: true
+          
+          
+    
+    
+  application:
+    name: email-service
+   
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/email_service?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+
+
+
+
+
+
