@@ -20,7 +20,7 @@ public class EmailService {
 	@Autowired
 	private JavaMailSender javaMailSender;
 	
-	@Value("${spring.mail.username}")
+	@Value("${spring.mail.email}")
 	private String sender;
 	
 	public EmailResponseDto sendMail(EmailRecordDto data) {
