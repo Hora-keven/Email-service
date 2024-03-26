@@ -16,13 +16,16 @@ server:
           
 spring:
   mail:
-    host: smtp.office365.com
-    port: 587
-    username: rosimeireanjosdahora@outlook.com
-    password: password
+    email: campinas.ets@br.bosch.com
+    host: rb-smtp-auth.rbesz01.com
+    port: 25
+    username: ct67ca@bosch.com
+    password: <your_password>
     properties:
       mail:
         smtp:
+          ssl:
+            trust: rb-smtp-auth.rbesz01.com
           auth: true
           starttls:
             enable: true       
